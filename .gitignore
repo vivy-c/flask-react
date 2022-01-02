@@ -1,0 +1,39 @@
+# Python related files (Flask)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+env/
+venv/
+ENV/
+VENV/
+pip-log.txt
+pip-delete-this-directory.txt
+*.sqlite3
+instance/
+*.log
+*.pot
+*.pyc
+*.pyo
+.coverage
+*.cfg
+*.egg-info/
+
+# React related files
+node_modules/
+build/
+npm-debug.log
+yarn-error.log
+.yarn-integrity
+.env
+.DS_Store
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+
+# Operating system files
+Thumbs.db
+.DS_Store
