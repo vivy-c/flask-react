@@ -6,7 +6,7 @@ function App() {
   const [contacts, setContacts] = useState([])
 
   useEffect(() => {
-    // fetchContacts()
+    fetchContacts()
   }, [])
 
   const fetchContacts = async () => {
@@ -15,7 +15,11 @@ function App() {
     setContacts(data.contacts)
     console.log(data.contacts)
   }
-  return <ContactList contacts={contacts} />
+  return (
+    <>
+      <ContactList contacts={contacts} />
+    </>
+  );
   
 }
 
