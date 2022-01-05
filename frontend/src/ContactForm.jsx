@@ -1,13 +1,13 @@
 import { useState } from "react"
 
-const ContactForm = ({ onSubmit }) => {
+const ContactForm = ({  }) => {
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
   const [email, setEmail] = useState("")
 
   const onSubmit = async (e) => {
     e.preventDefault()
-    
+
     const data = {
       firstName,
       lastName,
@@ -47,7 +47,6 @@ const ContactForm = ({ onSubmit }) => {
         <button type="submit">Create Contact</button>
     </form>
   );
-
 };
 
-export default ContactForm
+export default ContactForm;
