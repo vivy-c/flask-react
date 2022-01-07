@@ -24,7 +24,7 @@ def create_contact():
     try:
         db.session.add(new_contact)
         db.session.commit()
-        return jsonify({"success": "Contact created successfully"}), 201
+        return jsonify({"message": "Contact created successfully"}), 201
     except Exception as e:
         return jsonify({"message": str(e)}), 400
     
@@ -44,7 +44,7 @@ def update_contact(user_id):
     
     db.session.commit()
     
-    return jsonify({"success": "Contact updated successfully"}), 200
+    return jsonify({"message": "Contact updated successfully"}), 200
     
 @app.route("/delete_contact/<int:user_id>", methods=["DELETE"])
 def delete_contact(user_id):
@@ -55,7 +55,7 @@ def delete_contact(user_id):
     db.session.delete(contact)
     db.session.commit()
     
-    return jsonify({"success": "Contact deleted successfully"}), 200
+    return jsonify({"message": "Contact deleted successfully"}), 200
 
 if __name__ == "__main__":
     with app.app_context():
