@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request
 from config import app, db
 from models import Contact
 
+# Endpoint without swagger
 @app.route("/contacts", methods=["GET"])
 def get_contacts(): 
     contacts = Contact.query.all()
