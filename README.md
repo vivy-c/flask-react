@@ -13,6 +13,11 @@ plugin :
 </details>
 
 ## Flask
+
+## Swagger
+```
+python3 -m pip install flask_restx
+```
     
 ## How to run
 
